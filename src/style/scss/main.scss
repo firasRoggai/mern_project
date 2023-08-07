@@ -1,5 +1,46 @@
+$orange: rgb(216 125 74);
+$lightOrange: rgb(251 175 133);
+$black: rgb(0 0 0);
+@mixin btn($bgColor, $color, $border) {
+	background-color: $bgColor;
+	color: $color;
+	border: $border solid black;
+}
+@font-face {
+	font-family: 'Manrope';
+	src: url('../fonts/Manrope.ttf');
+}
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Manrope', sans-serif;
+}
+.btn {
+	text-transform: uppercase;
+	height: 48px;
+	width: 160px;
+	font-family: 'Manrope', sans-serif;
+	font-weight: 700;
+	margin: 20px;
+}
+.orange-btn {
+	@include btn($orange, white, 0);
+}
+.orange-btn:hover {
+	background-color: $lightOrange;
+}
+.black-btn {
+	@include btn(black, white, 1px);
+}
+.black-btn:hover {
+	@include btn(white, black, 1px);
+}
+.white-btn {
+	@include btn(white, black, 1px);
+}
+.white-btn:hover {
+	@include btn(black, white, 1px);
 }
