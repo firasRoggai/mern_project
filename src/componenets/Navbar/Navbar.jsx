@@ -1,5 +1,7 @@
 // icons
-import { AiOutlineShoppingCart } from 'react-icons/ai';
+import logo from '../../assets/logo.svg';
+import cartIcon from '../../assets/icon-cart.svg';
+import menuIcon from '../../assets/icon-hamburger.svg';
 // style
 import './Navbar.scss';
 
@@ -12,20 +14,22 @@ const Navbar = () => {
     ]
     return (
         <nav>
-            <div className="logo">
-                <h1>audiophile</h1>
+            <div className="menu-icon__container">
+                <img src={menuIcon} alt="" />
+            </div>
+            <div className="nav__logo">
+               <img src={logo} alt="" />
             </div>
             <ul className="nav__items">
                 {navItems.map((item, index) => {
                     return (
-                        <li><a href={item.link}>{item.name}</a></li>
+                        <li key={index}><a className='nav__item' href={item.link}>{item.name}</a></li>
                     )
                 })}
             </ul>
             <div className="cart-icon__container">
-                <AiOutlineShoppingCart />
+                <img src={cartIcon} alt="" />
             </div>
-            <p>run free </p>
         </nav>
     );
 }

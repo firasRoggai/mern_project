@@ -1,4 +1,8 @@
-// BREAKPOINTS
+// breakpoints
+
+$screen-sm: 576px;   // Small screens (up to 576px)
+$screen-md: 768px;   // Medium screens (up to 768px)
+$screen-lg: 1440px;   // Large screens (up to 1440px)
 
 @mixin small-screen {
     @media (max-width: #{$screen-sm}) {
@@ -6,21 +10,20 @@
     }
   };
   
-  
   @mixin md-screen {
-    @media (max-width: #{$screen-md}) {
+    @media (min-width: $screen-sm) and (max-width: #{$screen-md}) {
       @content;
     }
   };
   
   
   @mixin lg-screen {
-    @media (max-width: #{$screen-lg}) {
+    @media (min-width: $screen-lg) {
       @content;
     }
   };
   
-// COLORS
+// colors
 
 $clr-primary-100: #fafafa;
 $clr-primary-300: #f1f1f1;
@@ -36,4 +39,10 @@ $clr-neutral-400: #fbaf85;
 
 $font-weight: (400, 500, 700 ,800);
 
+// mixins
 
+@mixin centered-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

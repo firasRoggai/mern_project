@@ -1,3 +1,4 @@
+import './style/main.scss'
 import Navbar from './componenets/Navbar/Navbar'
 
 function App() {

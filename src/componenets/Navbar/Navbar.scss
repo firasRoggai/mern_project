@@ -1,11 +1,81 @@
-@import '../../style/abstract';
+@import "../../style/abstract";
 
 nav {
-    display: flex;
-    justify-content: space-around;
+  @include centered-flex;
+  gap: 10px;
+  background: $clr-primary-600;
+  padding: 32px 50px;
+  width: 100%;
+  border-bottom: 1px hsla(0, 0%, 100%, 0.2) solid;
+}
+
+.nav__logo {
+  font-weight: 800;
+}
+
+.nav__items {
+  @include centered-flex;
+  color: $clr-neutral-100;
+  font-size: 0.81rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.nav__item {
+  padding: 0px 12px;
+  color: $clr-neutral-100;
+
+  &:hover {
     color: $clr-primary-400;
-    
-    h1 {
-        font-weight: 700;
-    }
+  }
+}
+
+.cart-icon__container {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu-icon__container {
+  display: none;
+}
+
+// media queries
+
+@include small-screen {
+  nav {
+    padding: 22px 20px;
+  }
+
+  .nav__logo {
+    flex: unset;
+    padding: 0px 10px;
+  }
+  
+  .nav__items {
+    display: none;
+  }
+
+  .menu-icon__container {
+    display: block;
+  }
+}
+
+@include md-screen {
+  nav {
+    padding: 22px 20px;
+  }
+
+  .nav__logo {
+    flex: 1;
+    padding: 0px 10px;
+  }
+
+  .nav__items {
+    display: none;
+  }
+
+  .menu-icon__container {
+    display: block;
+  }
 }
