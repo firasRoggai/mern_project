@@ -18,28 +18,26 @@
 .button--neutral {
   background-color: transparent;
   color: $clr-neutral-300;
-}
-
-.button--neutral:hover {
-  background-color: $clr-neutral-300;
-  color: $clr-neutral-100;
+  &:hover {
+    background-color: $clr-neutral-300;
+    color: $clr-neutral-100;
+  }
 }
 
 .button--orange {
   background-color: $clr-primary-400;
   border: none;
   color: $clr-neutral-100;
-}
-
-.button--orange:hover {
-  background-color: $clr-neutral-400;
+  &:hover {
+    background-color: $clr-neutral-400;
+  }
 }
 
 .button--dark {
   background-color: $clr-neutral-300;
   color: $clr-neutral-100;
-}
-.button--dark:hover {
-  background-color: $clr-neutral-100;
-  color: $clr-neutral-300;
+  &:hover {
+    background-color: $clr-neutral-100;
+    color: $clr-neutral-300;
+  }
 }
