@@ -1,0 +1,43 @@
+@import '../../style/abstract';
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  height: 48px;
+  width: 160px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 20px;
+  border: 1px solid $clr-neutral-300;
+}
+
+.button--neutral {
+  background-color: transparent;
+  color: $clr-neutral-300;
+  &:hover {
+    background-color: $clr-neutral-300;
+    color: $clr-neutral-100;
+  }
+}
+
+.button--orange {
+  background-color: $clr-primary-400;
+  border: none;
+  color: $clr-neutral-100;
+  &:hover {
+    background-color: $clr-neutral-400;
+  }
+}
+
+.button--dark {
+  background-color: $clr-neutral-300;
+  color: $clr-neutral-100;
+  &:hover {
+    background-color: $clr-neutral-100;
+    color: $clr-neutral-300;
+  }
+}
