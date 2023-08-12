@@ -1,0 +1,39 @@
+// BREAKPOINTS
+
+@mixin small-screen {
+    @media (max-width: #{$screen-sm}) {
+      @content;
+    }
+  };
+  
+  
+  @mixin md-screen {
+    @media (max-width: #{$screen-md}) {
+      @content;
+    }
+  };
+  
+  
+  @mixin lg-screen {
+    @media (max-width: #{$screen-lg}) {
+      @content;
+    }
+  };
+  
+// COLORS
+
+$clr-primary-100: #fafafa;
+$clr-primary-300: #f1f1f1;
+$clr-primary-400: #d87d4a;
+$clr-primary-600: #101010;
+
+$clr-neutral-100: #ffffff;
+$clr-neutral-300: #000000;
+$clr-neutral-400: #fbaf85;
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap');
+
+$font-weight: (400, 500, 700);
+
+

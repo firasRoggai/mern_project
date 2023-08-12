@@ -1,0 +1,7 @@
+@import '../style/abstract';
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    color: $clr-primary-400;
+}

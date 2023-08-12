@@ -1,8 +1,9 @@
+import Navbar from './componenets/Navbar'
 function App() {
 
   return (
     <>
-     <h1>starter</h1>
+     <Navbar />
     </>
   )
 }
