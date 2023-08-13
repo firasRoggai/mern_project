@@ -2,7 +2,7 @@
 
 $screen-sm: 576px;   // Small screens (up to 576px)
 $screen-md: 768px;   // Medium screens (up to 768px)
-$screen-lg: 1440px;   // Large screens (up to 1440px)
+$screen-lg: 992px;   // Large screens (up to 992px)
 
 @mixin small-screen {
     @media (max-width: #{$screen-sm}) {
@@ -18,7 +18,7 @@ $screen-lg: 1440px;   // Large screens (up to 1440px)
   
   
   @mixin lg-screen {
-    @media (min-width: $screen-lg) {
+    @media (min-width: $screen-md) and (max-width: $screen-lg) {
       @content;
     }
   };
