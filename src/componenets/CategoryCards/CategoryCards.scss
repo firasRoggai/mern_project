@@ -1,0 +1,10 @@
+@import '../../style/abstract';
+
+.category-cards__container {
+  // @include centered-flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: fit-content;
+  gap: 1.875rem;
+  margin: auto;
+}
