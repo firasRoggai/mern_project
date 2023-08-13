@@ -1,19 +1,23 @@
+@import "./abstract";
+
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-	width: 100%;
+  width: 100%;
 }
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 ul {
-	list-style: none;
+  list-style: none;
 }
 body {
-	font-family: 'Manrope';
-	background-color: #fafafa;
-	position: relative;
+  font-family: "Manrope", sans-serif;
+  // background-color: #fafafa;
+  // leaving it as black for now
+  background: $clr-primary-600;
+  position: relative;
 }
