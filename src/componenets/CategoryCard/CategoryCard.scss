@@ -1,0 +1,41 @@
+@import '../../style/abstract';
+
+.category-card {
+  position: relative;
+  top: -55px;
+  text-align: center;
+  
+  &__container {
+    margin-top: 100px;
+    background-color: $clr-primary-300;
+    border-radius: 0.5rem;
+    padding-inline: calc(100vw / 30);
+    height: 180px;
+  }
+  
+  &__img {
+    width: 140px;
+    overflow-clip-margin: content-box;
+  }
+  
+  &__title {
+    text-transform: uppercase;
+    font-size: clamp(.9375rem,.375vw + .796875rem,1.125rem);
+    margin-bottom: 0.9375rem;
+    letter-spacing: 1.71px;
+  }
+
+  &__link {
+    color: $clr-neutral-300;
+    opacity: 0.5;
+    width: max-content;
+    margin: auto;
+    font-size: 0.8125rem;
+    letter-spacing: 1px;
+
+    &__icon {
+      margin-left: 8px;
+      color: $clr-primary-400;
+    }
+  }
+}

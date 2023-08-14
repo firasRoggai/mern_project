@@ -21,3 +21,7 @@ body {
   background: $clr-primary-600;
   position: relative;
 }
+.container {
+  width: min(1110px,100% - 3rem);
+  margin: auto;
+}

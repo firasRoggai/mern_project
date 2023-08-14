@@ -1,13 +1,16 @@
 import Navbar from './componenets/Navbar/Navbar'
-import Button from './componenets/Button/Button'
 import './style/main.scss'
+import CategoryCards from './componenets/CategoryCards/CategoryCards'
 
 function App() {
-	return (
-		<>
-			<Navbar />
-		</>
-	)
+  return (
+    <>
+      <Navbar />
+      <div className="container">
+        <CategoryCards />
+      </div>
+    </>
+  )
 }
 
 export default App
